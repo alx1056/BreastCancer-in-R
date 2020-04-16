@@ -1,7 +1,9 @@
 #install.packages("mlbench")
 library(mlbench)
 data(BreastCancer, package="mlbench")
-bc <- BreastCancer[complete.cases(BreastCancer), ]  # create copy
+
+# creates copy of BC data from "mlbench"
+bc <- BreastCancer[complete.cases(BreastCancer), ]
 
 #checks for structure of bc data
 str(bc)
